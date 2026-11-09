@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Currency Converter</h1>
+    <p>Convert money between currencies.</p>
+
+    <label>Amount</label>
+    <input type="number" id="amount" value="100" min="0.01">
+
+    <label>From Currency</label>
+    <select id="from">
+      <option value="KES">KES - Kenyan Shilling</option>
+      <option value="USD">USD - US Dollar</option>
+      <option value="EUR">EUR - Euro</option>
+      <option value="GBP">GBP - British Pound</option>
+      <option value="TZS">TZS - Tanzanian Shilling</option>
+      <option value="UGX">UGX - Ugandan Shilling</option>
+    </select>
+
+    <button id="swap">⇅ Swap currencies</button>
+
+    <label>To Currency</label>
+    <select id="to">
+      <option value="USD">USD - US Dollar</option>
+      <option value="KES">KES - Kenyan Shilling</option>
+      <option value="EUR">EUR - Euro</option>
+      <option value="GBP">GBP - British Pound</option>
+      <option value="TZS">TZS - Tanzanian Shilling</option>
+      <option value="UGX">UGX - Ugandan Shilling</option>
+    </select>
+
+    <button class="primary" id="convert">Convert</button>
+
+    <h2 id="result">Your result will appear here</h2>
+    <p id="status"></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
